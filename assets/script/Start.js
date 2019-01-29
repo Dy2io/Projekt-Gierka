@@ -32,6 +32,7 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {},
+    
     starMenu(){
         cc.director.loadScene('game');
     },
