@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "42a64758-8936-4dd1-922b-de988ac6faf9",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "1_police_attack_Attack1_000": {
+      "ver": "1.0.3",
+      "uuid": "fbbd1d52-2b52-4c81-8200-7b417fb7e238",
+      "rawTextureUuid": "42a64758-8936-4dd1-922b-de988ac6faf9",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -2,
+      "offsetY": -1.5,
+      "trimX": 247,
+      "trimY": 13,
+      "width": 484,
+      "height": 1195,
+      "rawWidth": 982,
+      "rawHeight": 1218,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
