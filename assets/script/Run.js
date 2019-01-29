@@ -36,7 +36,7 @@ cc.Class({
 	     if(this.getComponent(cc.Animation).getAnimationState("runs").isPaused){
                     this.getComponent(cc.Animation).getAnimationState("runs").play();
                 }
-	   this.node.x=this.node.x-20;
+	   this.node.x=this.node.x-10;
     },
 	
 	callbackR: function (button) {
@@ -46,7 +46,7 @@ cc.Class({
 	     if(this.getComponent(cc.Animation).getAnimationState("runs").isPaused){
                     this.getComponent(cc.Animation).getAnimationState("runs").play();
                 }
-	   this.node.x=this.node.x+20;
+	   this.node.x=this.node.x+10;
     },
 	
 	
@@ -149,48 +149,26 @@ cc.Class({
 },
 
 	onCollisionStay: function (other, self) {
+		//console.log('on collision stay');
+		//this.node.y = -60;
 		
-		var li=0;
-		
-		if(other.node.group=='podloga1'){
-			this.node.y = -217;
+		if(self){
+			this.node.y = -10;
+		}
+		if(other){
+			this.node.y = 36;
 		}
 		
-		if(other.node.group=='podloga2'){
-			this.node.y = 89;
-		}
+			//console.log(self.tags);
 		
-		if(other.node.group=='podloga3'){
-			this.node.y = 403;
-		}
 		
-		if(other.node.group=='drzwi1' && li==0){
-			this.node.y = 89;
-		}
-		
-		if(other.node.group=='drzwi2' && li==1){
-			this.node.y = 403;
-		}
-		
-		if(other.node.group=='drzwi2' && li==2){
-			this.node.y = -217;
-		}
-		
-		if(other.node.group=='drzwi3' && li==3){
-			this.node.y = 89;
-		}
-		
-		if(other.node.group=='npc'){
-			cc.director.loadScene('first-scene');
-		}
-		
-		if(other.node.group=='koniec'){
-			cc.director.loadScene('first-scene');
-		}
+		//console.log(this.node.y);
 },
 	
 	onCollisionExit: function (other, self) {
-		
+		//console.log('on collision exit');
+		this.node.y = -10;
+		//console.log(this.node.y);
 	},
 
 
