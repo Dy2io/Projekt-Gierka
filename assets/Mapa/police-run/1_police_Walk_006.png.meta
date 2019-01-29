@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "1a49bfa0-c335-415a-99b9-f393023cca32",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "1_police_Walk_006": {
+      "ver": "1.0.3",
+      "uuid": "d531bbf4-0580-4872-b8e7-1baaff54f49d",
+      "rawTextureUuid": "1a49bfa0-c335-415a-99b9-f393023cca32",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 41.5,
+      "offsetY": -2,
+      "trimX": 159,
+      "trimY": 34,
+      "width": 488,
+      "height": 1180,
+      "rawWidth": 723,
+      "rawHeight": 1244,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

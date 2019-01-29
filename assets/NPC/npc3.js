@@ -48,13 +48,17 @@ cc.Class({
 		if(this.node.x<2300){
 			this.i=0;
 			this.node.x+=3;
+			this.node.scaleX = Math.abs(this.node.scaleX);
 		}
 		if(this.node.x>2300){
 			this.i=1;
 			this.node.x=this.node.x-1;
+			this.node.scaleX = Math.abs(this.node.scaleX)*-1;
 			//console.log('zamiana');
 			//console.log(this.i);
 		}	
+
+		this.getComponent(cc.Animation).getAnimationState("police-run").play();
 	},
 
     start () {

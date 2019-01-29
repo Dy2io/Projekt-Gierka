@@ -181,11 +181,11 @@ cc.Class({
 		}
 		
 		if(other.node.group=='npc'){
-			cc.director.loadScene('first-scene');
+			cc.director.loadScene('game');
 		}
 		
 		if(other.node.group=='koniec'){
-			cc.director.loadScene('first-scene');
+			cc.director.loadScene('end');
 		}
 },
 	
