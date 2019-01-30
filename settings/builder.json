@@ -7,14 +7,19 @@
     "scheme": "https",
     "skipRecord": false
   },
+  "appKey": "",
+  "appSecret": "",
   "encryptJs": true,
   "excludeScenes": [],
   "fb-instant-games": {},
+  "includeAnySDK": false,
   "includeSDKBox": false,
   "inlineSpriteFrames": true,
   "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
   "md5Cache": false,
   "mergeStartScene": false,
+  "oauthLoginServer": "",
   "optimizeHotUpdate": false,
   "orientation": {
     "landscapeLeft": true,
@@ -23,13 +28,14 @@
     "upsideDown": false
   },
   "packageName": "org.cocos2d.NewProject",
+  "privateKey": "",
   "qqplay": {
     "REMOTE_SERVER_ROOT": "",
     "orientation": "portrait",
     "zip": false
   },
-  "startScene": "08133c20-caac-4968-8a14-7b22ceeab8d4",
-  "title": "NewProject",
+  "startScene": "c5feb532-6149-4d13-b1d9-8b684558af57",
+  "title": "Prison",
   "webOrientation": "auto",
   "wechatgame": {
     "REMOTE_SERVER_ROOT": "",

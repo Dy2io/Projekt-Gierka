@@ -25,8 +25,10 @@ cc.Class({
             default: null,
             type: cc.AudioClip
         },
-		buttonL: cc.Button,
-		buttonR: cc.Button,
+		buttonUp: cc.Sprite,
+        buttonDown: cc.Sprite,
+        floor: 0,
+        cam: cc.Camera,
     },
 	
 	callbackL: function (button) {
@@ -104,8 +106,9 @@ cc.Class({
 			this.xSpeed=0;
 		}else{
 			this.xSpeed=-200;
-		}*/
-		
+        }*/
+        
+		//console.log(this.node.y);
 	
 		
         if (this.accLeft) {
@@ -164,20 +167,28 @@ cc.Class({
 			this.node.y = 403;
 		}
 		
-		if(other.node.group=='drzwi1' && li==0){
-			this.node.y = 89;
+		if(other.node.group=='drzwi1' && this.floor==1){
+            this.node.y = 89;
+            this.floor = 0;
+            this.cam.node.y = 145;
 		}
 		
-		if(other.node.group=='drzwi2' && li==1){
-			this.node.y = 403;
+		if(other.node.group=='drzwi2' && this.floor==2){
+            this.node.y = -217;
+            this.floor = 0;
+            this.cam.node.y = 1;
 		}
 		
-		if(other.node.group=='drzwi2' && li==2){
-			this.node.y = -217;
+		if(other.node.group=='drzwi2' && this.floor==1){
+            this.node.y = 403;
+            this.floor = 0;
+            this.cam.node.y = 300;
 		}
 		
-		if(other.node.group=='drzwi3' && li==3){
-			this.node.y = 89;
+		if(other.node.group=='drzwi3' && this.floor==2){
+            this.node.y = 89;
+            this.floor = 0;
+            this.cam.node.y = 145;
 		}
 		
 		if(other.node.group=='npc'){
@@ -191,7 +202,15 @@ cc.Class({
 	
 	onCollisionExit: function (other, self) {
 		
-	},
+    },
+    
+    changeFloorUp: function (){
+        this.floor = 1;
+    },
+
+    changeFloorDown: function (){
+        this.floor = 2;
+    },
 
 
      

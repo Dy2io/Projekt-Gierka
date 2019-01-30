@@ -39,13 +39,13 @@ cc.Class({
 				//console.log(this.i);
 		}
 		
-		if(this.node.x<1600 && this.i==1){
+		if(this.node.x<2300 && this.i==1){
 			this.node.x-=90*dt;
 			//console.log(thisn.ode.x);
 			//console.log(this.i);
 		}
 		
-		if(this.node.x<2300){
+		if(this.node.x<1190){
 			this.i=0;
 			this.node.x+=3;
 			this.node.scaleX = Math.abs(this.node.scaleX);
